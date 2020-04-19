@@ -1,0 +1,20 @@
+@import 'components/common/react-modal';
+
+@import 'components/_spinner';
+@import 'components/_gnomeCard';
+@import 'layout/_footer';
+@import 'layout/_nav';
+@import 'layout/_layout';
+@import 'base/_nouislider.scss';
+@import 'components/_gnomeFilters';
+
+:root {
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  @media screen and (width: 800px) {
+    font-size: 9px;
+  }
+
+  
+}

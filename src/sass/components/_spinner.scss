@@ -1,0 +1,33 @@
+
+.spinner {
+  img {
+    width: 3rem;
+  }
+
+  &.high {
+    height: 60rem;
+  }
+
+  &.center-content {
+    text-align: center;
+  }
+
+  & .big {
+    width: 5rem;
+  }
+
+  & .margin-top {
+    margin-top: 10rem;
+  }
+
+  & .big-middle-screen {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    width: 7rem;
+  }
+  & .little-spinner {
+    width: 2rem;
+    padding-right: 1rem;
+  }
+}

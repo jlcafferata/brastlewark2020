@@ -1,0 +1,66 @@
+.gnome{
+  &-zoom{
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
+  }
+  &-list{
+    display:flex;
+    flex: 1 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &-element{
+    display: flex;
+    width: 18rem;
+    border: 1px solid #6da830;
+    margin: 0.5rem;
+    border-radius: 10px 10px 10px 10px;
+    padding: 0.5rem;
+    height: fit-content;
+  }
+  &-description{
+    
+  }
+  &-avatar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img{
+      width:5rem;
+      height: 5rem;
+      border-radius: 50px;
+    }
+  }
+  &-name{
+    font-size: 1.5rem;
+    padding-left: 0.2rem;
+  }
+  &-height{
+  
+  }
+  &-weight{
+    
+  }
+  &-age{
+    
+  }
+  &-hair-color{
+
+  }
+  &-friends{
+    
+  }
+  &-profession{
+    &-list{
+      &-expand{
+        display: inline
+      }
+      &-collapse{
+        display: none;
+      }
+    }
+  }
+
+}
+

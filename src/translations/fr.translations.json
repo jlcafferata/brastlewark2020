@@ -1,0 +1,70 @@
+{
+  "dashboard": {
+    "aboutUs": "À propos de nous",
+    "gnomeList": "Liste des gnomes"
+  },
+  "footer": {
+    "languages": "La langue"
+  },
+  "gnome": {
+    "height": "Hauteur",
+    "weight": "Poids",
+    "age": "Age",
+    "hair": "Cheveux",
+    "friends": "Amis",
+    "professions": "Professions"
+  },
+  "filters":{
+    "titles":{
+      "ageFrom":"Âge à partir de",
+      "to": "à",
+      "heightFrom": "Hauteur depuis",
+      "weightFrom": "Poids de",
+      "profession": "Profession",
+      "match": "rencontre"
+    },
+    "profession": "Profession",
+    "placeHolderProfession": "Sélectionnez une profession",
+    "selectAll":"Toute",
+    "age":"Âge",
+    "height": "Taille",
+    "name": "Nom",
+    "placeHolderName": "Saisissez un nom de recherche"
+  },
+  "messages": {
+    "code": {
+      "error": {
+        "400": "Mauvaise Demande",
+        "401": "L'accès non autorisé",
+        "404": "Ressource non disponible ou inexistante",
+        "405": "Il n'a pas été possible de traiter la demande",
+        "500": "Erreur Interne du Serveur",
+        "504": "Timeout connect"
+      }
+    },
+    "general": {
+      "error": "Erreur générale"
+    }
+  },
+  "aboutUs": {
+    "lockup": "Brastlewark est une ville presque exclusivement gnome dans l'est de Cheliax, située sur le bord ouest des montagnes Aspodell, à la tête de la rivière Brastle. On pense qu'elle est la plus grande colonie de gnomes de la région de la mer intérieure, peut-être même dans le monde entier. ",
+    "nation": "Nation",
+    "region": "région",
+    "size": "Taille",
+    "population": "Population",
+    "alignment": "Alignement",
+    "cheliax": "Cheliax",
+    "archduchy": "archiduché de Sirmium",
+    "largeTown": "Grande ville",
+    "overLord": "Overlord",
+    "chaotic": "Chaotique neutre",
+    "inhabitantsTitle": "Habitants",
+    "inhabitants": "La ville a une population proportionnellement importante de bardes, sorciers, alchimistes et artistes, et le besoin gnome de nouvelles expériences garantit que l'apparence de Brastlewark subit une modification constante. En raison de cette concentration sur le design et l'architecture, les architectes de Brastlewark et les ingénieurs sont particulièrement connus et possèdent souvent une capacité distincte d'incorporer des éléments disparates dans de nouvelles conceptions innovantes. ",
+    "geographyTitle": "Géographie",
+    "geography": "Brastlewark est facilement l'un des établissements architecturaux les plus idiosyncratiques et inhabituels de Cheliax autrement morose. C'est un méli-mélo déroutant de divers styles et concepts de conception avec ses rues tortueuses, ses impasses inattendues et ses parcs publics aux formes étranges. La plupart des bâtiments semblent être sur le point de s'effondrer, avec des étages et des annexes supplémentaires en collision les uns à côté des autres, mais la plupart sont en fait assez structurellement solides. Cependant, quelques fois par an, un gnome ambitieux espère de surclasser ses voisins en termes de hauteur de bâtiment ou d'extravagance, repousse trop les limites et fait s'écraser ses structures et celles voisines. ",
+    "commerceTitle": "Commerce",
+    "commerce": "Brastlewark est connu comme un centre de conception et d'industrie, se concentrant spécifiquement sur la création d'objets alchimiques et de composants de sorts matériels, et sur l'horlogerie. La création et l'approvisionnement de composants de sorts sont un objectif particulier des résidents de la ville, et de ses les commerçants les exportent partout dans Avistan et Garund. ",
+    "governmentTitle": "Gouvernement",
+    "government": "La ville est dirigée par le roi Drum Thornfiddle autoproclamé, qui est un vassal de la reine Abrogail II."
+  }
+}

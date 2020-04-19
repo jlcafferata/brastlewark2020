@@ -1,0 +1,48 @@
+
+.app {
+  a{
+    :active{
+      color: #6da830
+    }
+  }
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 97vh;
+}
+
+.main-content{
+  display: flex;
+  margin-top: 5rem;
+  flex: 1 1 ;
+}
+
+.gnome{
+  &-wrapper{
+    display: flex;
+    flex-direction: row;
+    &-list{
+      width: 20rem;
+      flex-direction: column;
+      display: flex;
+      &-element{
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+  &-aboutUs{
+    width: 90vw;
+    margin-left: 3rem;
+    h3{
+      color:#6da830;
+   }
+  }
+}
+
+.lockup{
+  h2{
+    color:#6da830;
+ }
+}
+

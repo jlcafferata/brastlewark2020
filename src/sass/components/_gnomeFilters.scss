@@ -1,0 +1,32 @@
+.gnome{
+  &-filterGroup{
+    display: flex;
+    flex-direction: column;  
+  }
+  &-filter{
+    display: flex;
+    flex-direction: column;  
+    padding: 1rem;
+    select{
+        font-size: 1rem;
+    }
+  }
+}
+.filter{
+  &-name-text{
+  height: 2rem;
+  text-transform:uppercase
+  }
+  &-match{
+    padding: 1rem;
+    border: 1px solid #cccc;
+    border-radius: 10px;
+    display: flex;
+    align-self: center;
+    margin: 1rem 0 2rem;
+  }
+  &-item{
+    padding-top:0.3rem;
+  }
+  
+}

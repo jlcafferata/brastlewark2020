@@ -1,0 +1,82 @@
+body {
+  font-size: 12px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+strong {
+  font-weight: 600;
+}
+.popup-form {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
+  background-color: white;
+  top: 15%;
+  left: 10%;
+  padding: 2rem 4rem;
+  width: 80rem;
+}
+
+// /* Overwrite css config from select library */
+// .css-vj8t7z,
+// .css-2o5izw,
+// .css-15k3avv {
+//   border-radius: 0 !important;
+//   border: 1px solid #d2cfcf !important;
+// }
+
+.css-1492t68 {
+  font-size: 0.9rem !important;
+}
+
+.react-datepicker {
+  font-family: 'Source Sans Pro', sans-serif;
+  border-radius: 0;
+
+  & button {
+    z-index: 100;
+  }
+
+  &__header {
+    border-radius: 0;
+    padding: 1rem;
+    color: white;
+  }
+  &__month {
+    padding: 1rem;
+  }
+
+  &-popper {
+    z-index: 11;
+  }
+}
+.mandatory {
+  color: #f02849;
+}
+
+.number_without_spinner {
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+}

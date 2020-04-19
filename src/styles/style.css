@@ -1,0 +1,560 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(94, 94, 94, 0.38);
+  z-index: 2; }
+
+.modal-box {
+  position: absolute;
+  top: 5.4rem;
+  left: 7.4rem;
+  right: 7.4rem;
+  background-color: #fafafa;
+  outline: none;
+  padding-bottom: 1rem; }
+
+.modal-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  z-index: 2; }
+
+.modal-header {
+  background-color: #fff;
+  box-sizing: border-box;
+  align-items: center;
+  color: #00008f;
+  padding: 1.875rem;
+  font-size: 1.375rem;
+  display: flex; }
+  .modal-header-button {
+    margin-left: auto;
+    margin-right: 0rem;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #5f5f5f;
+    border: none;
+    outline: none; }
+
+.modal-body {
+  padding: 2rem;
+  overflow-y: auto; }
+
+.ReactModal__Body--open {
+  overflow: hidden; }
+
+.spinner img {
+  width: 3rem; }
+
+.spinner.high {
+  height: 60rem; }
+
+.spinner.center-content {
+  text-align: center; }
+
+.spinner .big {
+  width: 5rem; }
+
+.spinner .margin-top {
+  margin-top: 10rem; }
+
+.spinner .big-middle-screen {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  width: 7rem; }
+
+.spinner .little-spinner {
+  width: 2rem;
+  padding-right: 1rem; }
+
+.gnome-zoom {
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto; }
+
+.gnome-list {
+  display: flex;
+  flex: 1 1;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.gnome-element {
+  display: flex;
+  width: 18rem;
+  border: 1px solid #6da830;
+  margin: 0.5rem;
+  border-radius: 10px 10px 10px 10px;
+  padding: 0.5rem;
+  height: fit-content; }
+
+.gnome-avatar {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .gnome-avatar img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50px; }
+
+.gnome-name {
+  font-size: 1.5rem;
+  padding-left: 0.2rem; }
+
+.gnome-profession-list-expand {
+  display: inline; }
+
+.gnome-profession-list-collapse {
+  display: none; }
+
+.app-footer {
+  display: flex;
+  background: white;
+  font-size: 0.8rem;
+  border-top: 1px solid #e5e5e5;
+  z-index: 2;
+  justify-content: center;
+  align-items: center; }
+  .app-footer .info {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .app-footer .info img {
+      height: 2rem; }
+    .app-footer .info .trade-mark {
+      padding-left: 0.2rem;
+      font-size: 0.5rem; }
+
+/* global */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.3rem 0;
+  z-index: 100;
+  width: 100vw;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  height: 3.375rem;
+  /* Brand and Logo */
+  /* The Search Component */ }
+  .nav .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem 0 1rem; }
+    .nav .menu-item-links {
+      display: flex;
+      justify-content: space-around;
+      flex: 0.3; }
+      .nav .menu-item-links :first-child {
+        border-right: 1px solid #6da830;
+        padding-right: 7rem; }
+      .nav .menu-item-links a {
+        text-decoration: none; }
+    .nav .menu-item-languages {
+      display: flex;
+      justify-content: flex-start; }
+      .nav .menu-item-languages p {
+        color: #6da830; }
+      .nav .menu-item-languages span {
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #586d97;
+        transition: color 0.3s ease; }
+        .nav .menu-item-languages span:hover {
+          color: #323e57; }
+      .nav .menu-item-languages .onfocus {
+        color: #6da830; }
+      .nav .menu-item-languages .language-list {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem; }
+        .nav .menu-item-languages .language-list div {
+          margin-right: 0.3rem;
+          padding-left: 0.3rem; }
+          .nav .menu-item-languages .language-list div:last-of-type {
+            border-left: 1px solid #586d97; }
+        .nav .menu-item-languages .language-list-flag {
+          cursor: pointer; }
+  .nav .brand {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 11rem;
+    text-decoration: none; }
+    .nav .brand img {
+      height: 2rem; }
+    .nav .brand h1 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin: 1rem;
+      color: #6da830; }
+  .nav .searchmenu {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    width: 45rem;
+    align-items: center; }
+    .nav .searchmenu button {
+      background: none;
+      outline: none;
+      cursor: pointer; }
+    .nav .searchmenu .search {
+      display: flex;
+      align-items: center; }
+      .nav .searchmenu .search .field {
+        width: 20rem; }
+      .nav .searchmenu .search .input {
+        display: flex; }
+        .nav .searchmenu .search .input input {
+          width: 18rem; }
+      .nav .searchmenu .search i {
+        font-size: 1rem;
+        cursor: pointer; }
+    .nav .searchmenu span {
+      font-size: 1rem;
+      color: #00008f;
+      margin-left: 2rem;
+      padding-left: 2rem;
+      cursor: pointer; }
+
+.app {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 97vh; }
+  .app a :active {
+    color: #6da830; }
+
+.main-content {
+  display: flex;
+  margin-top: 5rem;
+  flex: 1 1; }
+
+.gnome-wrapper {
+  display: flex;
+  flex-direction: row; }
+  .gnome-wrapper-list {
+    width: 20rem;
+    flex-direction: column;
+    display: flex; }
+    .gnome-wrapper-list-element {
+      display: flex;
+      flex-wrap: wrap; }
+
+.gnome-aboutUs {
+  width: 90vw;
+  margin-left: 3rem; }
+  .gnome-aboutUs h3 {
+    color: #6da830; }
+
+.lockup h2 {
+  color: #6da830; }
+
+/*! nouislider - 9.2.0 - 2017-01-11 10:35:35 */
+/* Functional styling;
+ * These styles are required for noUiSlider to function.
+ * You don't need to change these rules to apply your design.
+ */
+.noUi-target,
+.noUi-target * {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.noUi-target {
+  position: relative;
+  direction: ltr; }
+
+.noUi-base {
+  width: 90%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  padding: 4px;
+  margin: 10px;
+  /* Fix 401 */ }
+
+.noUi-connect {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+.noUi-origin {
+  position: absolute;
+  height: 0;
+  width: 0; }
+
+.noUi-handle {
+  position: relative;
+  z-index: 1; }
+
+.noUi-state-tap .noUi-connect,
+.noUi-state-tap .noUi-origin {
+  -webkit-transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
+  transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s; }
+
+.noUi-state-drag * {
+  cursor: inherit !important; }
+
+/* Painting and performance;
+  * Browsers can paint handles in their own layer.
+  */
+.noUi-base,
+.noUi-handle {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/* Slider size and handle placement;
+  */
+.noUi-horizontal {
+  height: 18px; }
+
+.noUi-horizontal .noUi-handle {
+  width: 14px;
+  height: 14px;
+  left: -7px;
+  top: -5px;
+  cursor: pointer; }
+
+.noUi-vertical {
+  width: 18px; }
+
+.noUi-vertical .noUi-handle {
+  width: 28px;
+  height: 34px;
+  left: -6px;
+  top: -17px; }
+
+/* Styling;
+  */
+.noUi-target {
+  border-radius: 2px;
+  height: 4px;
+  background-color: white; }
+
+.noUi-connect {
+  background: grey;
+  -webkit-transition: background 450ms;
+  transition: background 450ms; }
+
+/* Handles and cursors;
+  */
+.noUi-draggable {
+  cursor: ew-resize; }
+
+.noUi-vertical .noUi-draggable {
+  cursor: ns-resize; }
+
+.noUi-handle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  transition: box-shadow 0.2s ease;
+  background-color: darkgreen;
+  cursor: default; }
+
+.noUi-active {
+  border-color: #ffffff;
+  box-shadow: 0 0 0 15px rgba(0, 185, 230, 0.3);
+  outline: none; }
+
+.noUi-handle:after {
+  left: 17px; }
+
+.noUi-vertical .noUi-handle:before,
+.noUi-vertical .noUi-handle:after {
+  width: 14px;
+  height: 1px;
+  left: 6px;
+  top: 14px; }
+
+.noUi-vertical .noUi-handle:after {
+  top: 17px; }
+
+/* Disabled state;
+  */
+[disabled] .noUi-connect {
+  background: #B8B8B8; }
+
+[disabled].noUi-target,
+[disabled].noUi-handle,
+[disabled] .noUi-handle {
+  cursor: not-allowed; }
+
+/* Base;
+  *
+  */
+.noUi-pips,
+.noUi-pips * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.noUi-pips {
+  position: absolute;
+  color: #999; }
+
+/* Values;
+  *
+  */
+.noUi-value {
+  position: absolute;
+  text-align: center; }
+
+.noUi-value-sub {
+  color: #ccc;
+  font-size: 10px; }
+
+/* Markings;
+  *
+  */
+.noUi-marker {
+  position: absolute;
+  background: #CCC; }
+
+.noUi-marker-sub {
+  background: #AAA; }
+
+.noUi-marker-large {
+  background: #AAA; }
+
+/* Horizontal layout;
+  *
+  */
+.noUi-pips-horizontal {
+  padding: 10px 0;
+  height: 80px;
+  top: 100%;
+  left: 0;
+  width: 100%; }
+
+.noUi-value-horizontal {
+  -webkit-transform: translate3d(-50%, 50%, 0);
+  transform: translate3d(-50%, 50%, 0); }
+
+.noUi-marker-horizontal.noUi-marker {
+  margin-left: -1px;
+  width: 2px;
+  height: 5px; }
+
+.noUi-marker-horizontal.noUi-marker-sub {
+  height: 10px; }
+
+.noUi-marker-horizontal.noUi-marker-large {
+  height: 15px; }
+
+/* Vertical layout;
+  *
+  */
+.noUi-pips-vertical {
+  padding: 0 10px;
+  height: 100%;
+  top: 0;
+  left: 100%; }
+
+.noUi-value-vertical {
+  -webkit-transform: translate3d(0, 50%, 0);
+  transform: translate3d(0, 50%, 0);
+  padding-left: 25px; }
+
+.noUi-marker-vertical.noUi-marker {
+  width: 5px;
+  height: 2px;
+  margin-top: -1px; }
+
+.noUi-marker-vertical.noUi-marker-sub {
+  width: 10px; }
+
+.noUi-marker-vertical.noUi-marker-large {
+  width: 15px; }
+
+/*
+   TOOLTIPS
+ */
+.noUi-tooltip {
+  position: absolute;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
+  font-family: "Exo 2", sans-serif;
+  font-size: 11px;
+  font-weight: 200;
+  color: #fff;
+  padding: 3px 5px;
+  text-align: center;
+  transition: all 0.3s ease;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0.0; }
+
+.noUi-horizontal .noUi-tooltip {
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0); }
+
+.noUi-active .noUi-tooltip {
+  opacity: 1.0;
+  bottom: 170%;
+  transform: translate(-50%, 0px); }
+
+.noUi-tooltip:before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid; }
+
+.noUi-vertical .noUi-tooltip {
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  top: 50%;
+  right: 120%; }
+
+.gnome-filterGroup {
+  display: flex;
+  flex-direction: column; }
+
+.gnome-filter {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem; }
+  .gnome-filter select {
+    font-size: 1rem; }
+
+.filter-name-text {
+  height: 2rem;
+  text-transform: uppercase; }
+
+.filter-match {
+  padding: 1rem;
+  border: 1px solid #cccc;
+  border-radius: 10px;
+  display: flex;
+  align-self: center;
+  margin: 1rem 0 2rem; }
+
+.filter-item {
+  padding-top: 0.3rem; }
+
+:root {
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  @media screen and (width: 800px) {
+    :root {
+      font-size: 9px; } }

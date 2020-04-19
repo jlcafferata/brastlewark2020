@@ -1,0 +1,140 @@
+
+/* global */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.3rem 0;
+  z-index: 100;
+  width: 100vw;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  height: 3.375rem;
+
+  & .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem 0 1rem;
+    &-item{
+        &-links{
+          :first-child{
+            border-right: 1px solid #6da830;
+            padding-right: 7rem;
+          }
+          display: flex;
+          justify-content: space-around;
+          flex: 0.3;
+          a{
+            text-decoration: none;
+          }
+        }
+        &-languages {
+          display: flex;
+          justify-content: flex-start;
+          & p {
+            color: #6da830;
+          }
+    
+          & span {
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #586d97;
+            transition: color 0.3s ease;
+    
+            &:hover {
+              color: #323e57;
+            }
+          }
+    
+          & .onfocus {
+            color: #6da830;
+          }
+    
+          & .language-list {
+            display: flex;
+            align-items: center;
+            margin-left: 1rem;
+            & div {
+              margin-right: 0.3rem;
+              padding-left: 0.3rem;
+    
+              &:last-of-type {
+                border-left: 1px solid #586d97;
+              }
+            }
+            &-flag{
+              cursor: pointer;
+            }
+          }
+        }
+    }
+  }
+  
+  /* Brand and Logo */
+  & .brand {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 11rem;
+    text-decoration: none;
+   
+
+    & img {
+      height: 2rem;
+    }
+
+    & h1 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin: 1rem;
+      color: #6da830;
+    }
+  }
+
+  /* The Search Component */
+  & .searchmenu {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    width: 45rem;
+    align-items: center;
+    button {
+      background: none;
+      outline: none;
+      cursor: pointer;
+    }
+
+    & .search {
+      display: flex;
+      align-items: center;
+
+      & .field {
+        width: 20rem;
+      }
+
+      & .input {
+        display: flex;
+        & input {
+          width: 18rem;
+        }
+      }
+
+      & i {
+        font-size: 1rem;
+        //color: #00008f;
+        cursor: pointer;
+      }
+    }
+
+    & span {
+      font-size: 1rem;
+      color: #00008f;
+      margin-left: 2rem;
+      padding-left: 2rem;
+      cursor: pointer;
+    }
+  }
+}
