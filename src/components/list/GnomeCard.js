@@ -1,6 +1,6 @@
-import React from 'react'
-import { Translate } from 'react-localize-redux'
-import MultipleItems from './utils/MultipleItems'
+import React from "react";
+import {Translate} from "react-localize-redux";
+import MultipleItems from "./utils/MultipleItems";
 
 const GnomeCard = ({
   gnome: {
@@ -45,9 +45,8 @@ const GnomeCard = ({
           <MultipleItems items={professions} />
         </div>
       </div>
-      <i className="gnome-zoom fas fa-search-plus" style={{ cursor: 'pointer' }}></i>
     </div>
-  )
-}
+  );
+};
 
-export default GnomeCard
+export default GnomeCard;
