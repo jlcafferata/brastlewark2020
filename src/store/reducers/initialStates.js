@@ -32,6 +32,6 @@ const initialState = {
   },
   loading: false,
   idShowDetail: '',
-}
+};
 
-export default initialState
+export default initialState;

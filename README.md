@@ -1,22 +1,24 @@
 # BRASTLEWARK
+
 ### A friendly web app that helps our heroes to browse into the information of the gnomes living in Brastlewark
 
 ### To install the application on your local machines, you need to :
 
     Clone the repo or download the zip
-    From inside the repo, open your terminal and type npm install 
+    From inside the repo, open your terminal and type npm install
     Type npm start to initialize a local server and open your browser and type localhost:3000
-    
+
 ### Tech Stack
 
-    * React 
-    * Redux 
+    * React
+    * Redux
     * Hooks
     * redux-thunk as middleware
     * Sass, CSS and Material-UI - For easy styling and responsive website
     * Jest and Enzyme
-    
+
 ### API
+
     https://raw.githubusercontent.com/rrafols/mobile_test/master/data.json
 
 ## Available Scripts

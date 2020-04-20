@@ -1,13 +1,11 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
-import { getTranslate, Translate } from 'react-localize-redux'
+import React from 'react';
+import {useSelector} from 'react-redux';
+import {getTranslate, Translate} from 'react-localize-redux';
 
 const FiltersSelected = () => {
-  const translate = useSelector((state) => getTranslate(state.localize))
-  const [
-    { age, height, weight, gnomeSelected, professionSelected },
-    { population },
-  ] = useSelector((state) => [state.gnomeFilters, state.gnomeData]) || {}
+  const translate = useSelector((state) => getTranslate(state.localize));
+  const [{age, height, weight, gnomeSelected, professionSelected}, {population}] =
+    useSelector((state) => [state.gnomeFilters, state.gnomeData]) || {};
 
   const visibleAgeFilter =
       (age.from && parseFloat(age.min) !== parseFloat(age.from)) ||
@@ -33,7 +31,7 @@ const FiltersSelected = () => {
     visibleGnomeSelected = gnomeSelected ? `Gnome: like ${gnomeSelected}` : '',
     visibleProfessionSelected = professionSelected
       ? `${translate('filters.titles.profession')} ${professionSelected}`
-      : ''
+      : '';
 
   return (
     <div className="gnome-filter">
@@ -47,7 +45,7 @@ const FiltersSelected = () => {
       <div className="filter-item">{visibleGnomeSelected}</div>
       <div className="filter-item">{visibleProfessionSelected}</div>
     </div>
-  )
-}
+  );
+};
 
-export default FiltersSelected
+export default FiltersSelected;

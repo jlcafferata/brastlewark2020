@@ -1,5 +1,5 @@
-import * as types from '../actionTypes'
-import initialStates from './initialStates'
+import * as types from '../actionTypes';
+import initialStates from './initialStates';
 
 export default function gnomeDataReducer(state = initialStates, action = {}) {
   switch (action.type) {
@@ -8,7 +8,7 @@ export default function gnomeDataReducer(state = initialStates, action = {}) {
         ...state,
         population: action.data,
         dataFiltered: action.data,
-      }
+      };
     case types.INHABITANTS_LOAD_FILTERS:
       return {
         ...state,
@@ -37,23 +37,23 @@ export default function gnomeDataReducer(state = initialStates, action = {}) {
           to: action.data.ageMax,
         },
         showDetail: false,
-      }
+      };
     case types.SET_FETCH_LOADING:
       return {
         ...state,
         loading: true,
-      }
+      };
     case types.SET_FETCH_READY:
       return {
         ...state,
         loading: false,
-      }
+      };
     case types.APPLY_FILTERS:
       return {
         ...state,
         population: action.data,
-      }
+      };
     default:
-      return state
+      return state;
   }
 }

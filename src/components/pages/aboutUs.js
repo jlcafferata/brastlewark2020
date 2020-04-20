@@ -1,5 +1,5 @@
-import React from 'react'
-import { Translate } from 'react-localize-redux'
+import React from 'react';
+import {Translate} from 'react-localize-redux';
 
 const aboutUs = () => {
   return (
@@ -67,7 +67,7 @@ const aboutUs = () => {
         <Translate id="aboutUs.government" />
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default aboutUs
+export default aboutUs;

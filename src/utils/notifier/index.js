@@ -1,24 +1,19 @@
-import React from 'react'
-import { toast } from 'react-toastify'
-import { Translate } from 'react-localize-redux'
-import errorIcon from '../../utils/images/notifier/error.svg'
-import warningIcon from '../../utils/images/notifier/warning.svg'
-import infoIcon from '../../utils/images/notifier/info.svg'
-import successIcon from '../../utils/images/notifier/success.svg'
+import React from 'react';
+import {toast} from 'react-toastify';
+import {Translate} from 'react-localize-redux';
+import errorIcon from '../../utils/images/notifier/error.svg';
+import warningIcon from '../../utils/images/notifier/warning.svg';
+import infoIcon from '../../utils/images/notifier/info.svg';
+import successIcon from '../../utils/images/notifier/success.svg';
 
-const notifier = ({
-  message,
-  autoClose = true,
-  className = '',
-  extendedMessage,
-}) => {
+const notifier = ({message, autoClose = true, className = '', extendedMessage}) => {
   if (typeof message === 'string' && message.includes('401')) {
-    return (window.location.href = '/private')
+    return (window.location.href = '/private');
   }
 
-  toast.dismiss()
-  const isSingleMessage = !Array.isArray(message)
-  const arrayMessage = isSingleMessage ? [message] : message
+  toast.dismiss();
+  const isSingleMessage = !Array.isArray(message);
+  const arrayMessage = isSingleMessage ? [message] : message;
 
   const messageTranslated = (
     <div>
@@ -37,12 +32,12 @@ const notifier = ({
         ''
       )}
     </div>
-  )
+  );
 
-  const isSuccess = arrayMessage[0].includes('.success')
-  const isError = arrayMessage[0].includes('.error')
-  const isWarning = arrayMessage[0].includes('.warning')
-  const config = { autoClose, className }
+  const isSuccess = arrayMessage[0].includes('.success');
+  const isError = arrayMessage[0].includes('.error');
+  const isWarning = arrayMessage[0].includes('.warning');
+  const config = {autoClose, className};
 
   if (isSuccess) {
     toast.success(
@@ -53,7 +48,7 @@ const notifier = ({
         </span>
       </div>,
       config
-    )
+    );
   } else if (isError) {
     toast.error(
       <div className="Toastify__toast--wrapper">
@@ -63,7 +58,7 @@ const notifier = ({
         </span>
       </div>,
       config
-    )
+    );
   } else if (isWarning) {
     toast.warn(
       <div className="Toastify__toast--wrapper">
@@ -73,7 +68,7 @@ const notifier = ({
         </span>
       </div>,
       config
-    )
+    );
   } else {
     toast.info(
       <div className="Toastify__toast--wrapper">
@@ -83,8 +78,8 @@ const notifier = ({
         </span>
       </div>,
       config
-    )
+    );
   }
-}
+};
 
-export default notifier
+export default notifier;

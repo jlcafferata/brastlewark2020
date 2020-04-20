@@ -1,11 +1,11 @@
-import React from 'react'
-import { Translate } from 'react-localize-redux'
-import classnames from 'classnames'
-import { NavLink, Link } from 'react-router-dom'
-import { withLocalize } from 'react-localize-redux'
-import brastlewarkLogo from '../../utils/images/logo.svg'
+import React from 'react';
+import {Translate} from 'react-localize-redux';
+import classnames from 'classnames';
+import {NavLink, Link} from 'react-router-dom';
+import {withLocalize} from 'react-localize-redux';
+import brastlewarkLogo from '../../utils/images/logo.svg';
 
-const Nav = ({ languages, setActiveLanguage }) => {
+const Nav = ({languages, setActiveLanguage}) => {
   return (
     <nav className="nav">
       <section className="menu">
@@ -42,7 +42,7 @@ const Nav = ({ languages, setActiveLanguage }) => {
         </div>
       </section>
     </nav>
-  )
-}
+  );
+};
 
-export default withLocalize(Nav)
+export default withLocalize(Nav);

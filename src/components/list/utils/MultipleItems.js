@@ -1,24 +1,24 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react';
 
-const MultipleItems = ({ items }) => {
-  const [isExpanded, setIsExpanded] = useState(false)
+const MultipleItems = ({items}) => {
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleExpanded = () => {
-    setIsExpanded(!isExpanded)
-  }
+    setIsExpanded(!isExpanded);
+  };
 
   return (
     <>
       {isExpanded ? (
         <i
           className="far fa-minus-square"
-          style={{ cursor: 'pointer' }}
+          style={{cursor: 'pointer'}}
           onClick={toggleExpanded}
         ></i>
       ) : (
         <i
           className="far fa-plus-square"
-          style={{ cursor: 'pointer' }}
+          style={{cursor: 'pointer'}}
           onClick={toggleExpanded}
         ></i>
       )}
@@ -28,7 +28,7 @@ const MultipleItems = ({ items }) => {
         ))}
       </div>
     </>
-  )
-}
+  );
+};
 
-export default MultipleItems
+export default MultipleItems;

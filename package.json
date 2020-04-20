@@ -39,9 +39,10 @@
     ]
   },
   "prettier": {
-    "printWidth": 90,
+    "printWidth": 85,
     "bracketSpacing": false,
-    "trailingComma": "es5"
+    "trailingComma": "es5",
+    "singleQuote": true
   },
   "browserslist": {
     "production": [

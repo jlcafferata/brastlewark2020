@@ -1,5 +1,5 @@
-import React from 'react'
-import brastlewarkLogo from '../../utils/images/logo.svg'
+import React from 'react';
+import brastlewarkLogo from '../../utils/images/logo.svg';
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
         <span className="trade-mark">TM</span>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

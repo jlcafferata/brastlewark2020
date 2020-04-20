@@ -1,14 +1,14 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
-import GnomeCard from './GnomeCard'
-import Spinner from '../commons/Spinner'
+import React from 'react';
+import {useSelector} from 'react-redux';
+import GnomeCard from './GnomeCard';
+import Spinner from '../commons/Spinner';
 
-const GnomeListContainer = ({ population = [] }) => {
-  const { loading = true } = useSelector((state) => state.gnomeData) || {}
+const GnomeListContainer = ({population = []}) => {
+  const {loading = true} = useSelector((state) => state.gnomeData) || {};
 
   const content = population.map((gnome) => {
-    return gnome.display ? <GnomeCard gnome={gnome} key={gnome.id} /> : null
-  })
+    return gnome.display ? <GnomeCard gnome={gnome} key={gnome.id} /> : null;
+  });
 
   return (
     <>
@@ -18,7 +18,7 @@ const GnomeListContainer = ({ population = [] }) => {
         <div className="gnome-list">{content}</div>
       )}
     </>
-  )
-}
+  );
+};
 
-export default GnomeListContainer
+export default GnomeListContainer;

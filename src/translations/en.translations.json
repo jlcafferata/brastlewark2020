@@ -14,18 +14,18 @@
     "friends": "Friends",
     "professions": "Professions"
   },
-  "filters":{
-    "titles":{
-      "ageFrom":"Age from",
+  "filters": {
+    "titles": {
+      "ageFrom": "Age from",
       "to": "to",
       "heightFrom": "Height from",
       "weightFrom": "Weight from",
       "profession": "Profession",
       "match": "match"
     },
-    "profession": "Profession", 
+    "profession": "Profession",
     "placeHolderProfession": "Select a profession",
-    "selectAll":"All",
+    "selectAll": "All",
     "age": "Age",
     "height": "Height",
     "name": "Name",

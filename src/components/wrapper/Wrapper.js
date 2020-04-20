@@ -1,9 +1,9 @@
-import React from 'react'
-import { Switch } from 'react-router-dom'
-import { Route } from 'react-router-dom'
-import Layout from '../layout/Layout'
-import AboutUs from '../pages/aboutUs'
-import GnomeList from '../pages/gnomeList'
+import React from 'react';
+import {Switch} from 'react-router-dom';
+import {Route} from 'react-router-dom';
+import Layout from '../layout/Layout';
+import AboutUs from '../pages/aboutUs';
+import GnomeList from '../pages/gnomeList';
 
 const Wrapper = () => {
   return (
@@ -15,7 +15,7 @@ const Wrapper = () => {
         <Route path="*" component={AboutUs} />
       </Switch>
     </Layout>
-  )
-}
+  );
+};
 
-export default Wrapper
+export default Wrapper;
