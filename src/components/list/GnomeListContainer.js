@@ -15,7 +15,9 @@ const GnomeListContainer = ({population = []}) => {
       {loading ? (
         <Spinner className="big-middle-screen" />
       ) : (
-        <div className="gnome-list">{content}</div>
+        <div className="gnome-list" data-test="gnome-list">
+          {content}
+        </div>
       )}
     </>
   );
