@@ -25,9 +25,9 @@
   },
   "scripts": {
     "postinstall": "npm run build",
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "compile:sass": "node-sass -w src/sass -o src/styles",
     "lint": "eslint .",
